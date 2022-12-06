@@ -20,10 +20,10 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Chango&family=DynaPuff&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-  <title>Beranda</title>
+  <title>Layanan</title>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -36,12 +36,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-lg-2">
+          <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link" aria-current="page" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/service">Layanan</a>
+              <a class="nav-link active" href="#">Layanan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">Tentang</a>
@@ -49,12 +49,12 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Others
-                </a>
+              </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/contact">Kontak</a></li>
                 <li><a class="dropdown-item" href="/gallery">Galeri</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/service #paket">Paket</a></li>
+                <li><a class="dropdown-item" href="#paket">Paket</a></li>
               </ul>
             </li>
           </ul><hr>
@@ -69,54 +69,11 @@
     <!-- Navbar end -->
   </header>
   
-  <!-- Carousell images -->
-  <section class="container-fluid bg-dark">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/carousel-1.jpg" class="d-block w-100" alt="image" style="height: 600px">
-          <div class="carousel-caption" style="z-index: 1">
-            <h5>( Perawatan )</h5>
-            <p>Kami memberikan jasa perawatan rutin sesuai paket yg di pilih.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/carousel-2.jpg" class="d-block w-100" alt="image" style="height: 600px">
-          <div class="carousel-caption" style="z-index: 1">
-            <h5>( Isi ulang Freon )</h5>
-            <p>Dapatkan diskon untuk pengisian 2++ unit AC.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/carousel-3.jpeg" class="d-block w-100" alt="image" style="height: 600px">
-          <div class="carousel-caption" style="z-index: 1">
-            <h5>( Bongkar Pasang AC )</h5>
-            <p>Terima jasa pemasangan dan pembongkaran AC.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  <!-- end Carousell images -->
-  
-  <!-- profile start -->  
-  <section class="profile container-fluid bg-primary">  
+  <!-- profile start -->
+  <section class="profile container-fluid bg-primary">
     <div class="row text-center align-items-center">
       <div class="col-12 mt-4">
-        <img src="assets/logo.png" alt="gambar logo" width="100" height="100" border="1" style="border-radius: 50px; border-color: grey">
+        <img src="/assets/logo.png" alt="gambar logo" width="100" height="100" border="1" style="border-radius: 50px; border-color: grey">
         <h2 class="mt-2 text-light">(( Rinjani AC ))</h2>
         <i class="text-secondary">"Memberikan pelayanan yang memuaskan"</i>
       </div>
@@ -124,55 +81,136 @@
   </section>
   <!-- profile end -->
   
-  <!-- Card start -->
-  <section class="container-fluid">
-    <div class="row text-dark mt-4 justify-content-center">
-      <div class="col-sm-4 g-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title text-center">Layanan</h4>
-            <p class="card-text text-secondary">Respon cepat, service yang berkualitas dg Harga terjangkau. 🙏</p>
-            <a href="/service" class="btn btn-primary d-block">Lihat lebih lengkap</a>
+  <!-- service start -->
+  <section class="container-fluid text-dark">
+    <div class="row mt-5 m-auto">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="/assets/gallery-img/g4.jpg" class="img-fluid rounded-start" alt="gambar" style="height: 100%">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Isi afreon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                <p class="card-text"><small class="text-muted">250.000 Rp</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4 g-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title text-center">Paket</h4>
-            <p class="card-text text-secondary">Kami juga menyediakan class untuk jasa perawatan rutin bulanan.</p>
-            <a href="/paket" class="btn btn-primary d-block">Lihat lebih lengkap</a>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="/assets/gallery-img/g12.jpg" class="img-fluid rounded-start" alt="gambar" style="height: 100%">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Cuci AC</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                <p class="card-text"><small class="text-muted">100.000 Rp</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4 g-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title text-center">Tentang kami</h4>
-            <p class="card-text text-secondary">Lotim Service merupakan jasa perawatan AC yang menyediakan...</p>
-            <a href="/about" class="btn btn-primary d-block">Lihat lebih lengkap</a>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="/assets/gallery-img/g18.png" class="img-fluid rounded-start" alt="gambar" style="height: 100%">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Ac Bocor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                <p class="card-text"><small class="text-muted">75.000 Rp</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4 g-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title text-center">Kontak</h4>
-            <p class="card-text text-secondary">Jangan ragu jangan sungkan Panggilan anda selalu kami tunggu. 🙏</p>
-            <a href="/contact" class="btn btn-primary d-block">Hubungi kami</a>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="/assets/gallery-img/g11.jpg" class="img-fluid rounded-start" alt="gambar" style="height: 100%">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Perawatan</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                <p class="card-text"><small class="text-muted">100.000 Rp</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="/assets/gallery-img/g19.png" class="img-fluid rounded-start" alt="gambar" style="height: 100%">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title">Pergantian spare part</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet..</p>
+                <p class="card-text"><small class="text-muted">Tergantung</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Card end -->
+  <!-- service end -->
+  
+  <!-- Paket start -->
+  <section id="paket" class="container">
+    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Paket Mingguan
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Paket Bulanan
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Paket Pertiga bulan
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Paket end -->
     
   <!-- footer start -->
   <section class="footers container-fluid bg-primary text-secondary">
     <div class="row m-auto mt-5">
       <div class="col-md-6 d-flex justify-content-center mt-4" style="gap: 20px">
         <a class="nav-link" href="/service">Layanan</a>
-        <a class="nav-link" href="/service #paket">Paket</a>
+        <a class="nav-link" href="#paket">Paket</a>
         <a class="nav-link" href="/about">Tentang</a>
       </div>
       <div class="col-md-6 d-flex justify-content-center mt-4" style="gap: 20px">
